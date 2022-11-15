@@ -19,7 +19,7 @@ y_train.drop(columns=['RECORD_ID'], inplace=True)
 y_test.drop(columns=['RECORD_ID'], inplace=True)
 
 #modelo = SVC(kernel='poly', C=0.1, degree=3, gamma=0.1, random_state=42)
-kernel = 'rbf'
+kernel = 'poly'
 c = 0.1
 degree = 3
 
