@@ -1,0 +1,77 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/projects/tesis_svm_1_9/svm2.py", line 2, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 32 concurrent workers.
+4
+[Parallel(n_jobs=-1)]: Done   2 out of   5 | elapsed: 228.0min remaining: 342.0min
+Traceback (most recent call last):
+  File "/home/ubuntu/projects/tesis_svm_1_9/svm2.py", line 36, in <module>
+    scores = cross_validate(modelo, X_train, y_train["flg_preeclampsia"], cv=5, scoring=["roc_auc", "accuracy", "precision", "recall"], verbose=5, n_jobs=-1)
+  File "/home/ubuntu/envs/corrida_final/env/lib/python3.10/site-packages/sklearn/model_selection/_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "/home/ubuntu/envs/corrida_final/env/lib/python3.10/site-packages/joblib/parallel.py", line 1056, in __call__
+    self.retrieve()
+  File "/home/ubuntu/envs/corrida_final/env/lib/python3.10/site-packages/joblib/parallel.py", line 935, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "/home/ubuntu/envs/corrida_final/env/lib/python3.10/site-packages/joblib/_parallel_backends.py", line 542, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+The exit codes of the workers are {SIGKILL(-9), SIGKILL(-9)}
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 32 concurrent workers.
+[Parallel(n_jobs=-1)]: Done   2 out of   5 | elapsed: 60.0min remaining: 90.0min
+[CV] END  accuracy: (test=0.911) precision: (test=0.900) recall: (test=0.118) roc_auc: (test=0.551) total time=58.4min
+[Parallel(n_jobs=-1)]: Done   5 out of   5 | elapsed: 64.0min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 32 concurrent workers.
+[CV] END  accuracy: (test=0.909) precision: (test=0.871) recall: (test=0.107) roc_auc: (test=0.556) total time=64.0min
+[CV] END  accuracy: (test=0.910) precision: (test=0.870) recall: (test=0.109) roc_auc: (test=0.542) total time=165.4min
+[Parallel(n_jobs=-1)]: Done   2 out of   5 | elapsed: 174.6min remaining: 261.9min
+[CV] END  accuracy: (test=0.910) precision: (test=0.862) recall: (test=0.120) roc_auc: (test=0.558) total time=61.3min
+[CV] END  accuracy: (test=0.911) precision: (test=0.896) recall: (test=0.122) roc_auc: (test=0.553) total time=174.6min
+[CV] END  accuracy: (test=0.910) precision: (test=0.876) recall: (test=0.117) roc_auc: (test=0.557) total time=62.3min
+[CV] END  accuracy: (test=0.911) precision: (test=0.864) recall: (test=0.124) roc_auc: (test=0.555) total time=175.2min
+[CV] END  accuracy: (test=0.911) precision: (test=0.898) recall: (test=0.118) roc_auc: (test=0.552) total time=60.0min
+[CV] END  accuracy: (test=0.911) precision: (test=0.873) recall: (test=0.119) roc_auc: (test=0.548) total time=178.2min
+[Parallel(n_jobs=-1)]: Done   5 out of   5 | elapsed: 183.5min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 32 concurrent workers.
+[CV] END  accuracy: (test=0.910) precision: (test=0.870) recall: (test=0.109) roc_auc: (test=0.536) total time=251.5min
+[Parallel(n_jobs=-1)]: Done   2 out of   5 | elapsed: 290.5min remaining: 435.8min
+[CV] END  accuracy: (test=0.911) precision: (test=0.896) recall: (test=0.122) roc_auc: (test=0.543) total time=290.5min
+[CV] END  accuracy: (test=0.911) precision: (test=0.902) recall: (test=0.121) roc_auc: (test=0.545) total time=183.5min
+[CV] END  accuracy: (test=0.911) precision: (test=0.873) recall: (test=0.119) roc_auc: (test=0.542) total time=324.2min
+[CV] END  accuracy: (test=0.911) precision: (test=0.901) recall: (test=0.121) roc_auc: (test=0.538) total time=330.6min
+[Parallel(n_jobs=-1)]: Done   5 out of   5 | elapsed: 354.5min finished
+[CV] END  accuracy: (test=0.911) precision: (test=0.860) recall: (test=0.124) roc_auc: (test=0.552) total time=354.5min
+Traceback (most recent call last):
+  File "/home/ubuntu/projects/tesis_svm_1_9/svm_poly5.py", line 2, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 32 concurrent workers.
+[CV] END  accuracy: (test=0.910) precision: (test=0.895) recall: (test=0.105) roc_auc: (test=0.558) total time=239.1min
+[Parallel(n_jobs=-1)]: Done   2 out of   5 | elapsed: 244.7min remaining: 367.1min
+[CV] END  accuracy: (test=0.908) precision: (test=0.872) recall: (test=0.095) roc_auc: (test=0.551) total time=244.7min
+[CV] END  accuracy: (test=0.909) precision: (test=0.871) recall: (test=0.103) roc_auc: (test=0.546) total time=271.3min
+[CV] END  accuracy: (test=0.909) precision: (test=0.856) recall: (test=0.105) roc_auc: (test=0.561) total time=272.0min
+[Parallel(n_jobs=-1)]: Done   5 out of   5 | elapsed: 309.8min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 32 concurrent workers.
+[CV] END  accuracy: (test=0.910) precision: (test=0.875) recall: (test=0.109) roc_auc: (test=0.559) total time=533.6min
+[Parallel(n_jobs=-1)]: Done   2 out of   5 | elapsed: 590.5min remaining: 885.7min
+[CV] END  accuracy: (test=0.910) precision: (test=0.889) recall: (test=0.109) roc_auc: (test=0.558) total time=590.4min
+[CV] END  accuracy: (test=0.909) precision: (test=0.872) recall: (test=0.098) roc_auc: (test=0.555) total time=656.2min
+[CV] END  accuracy: (test=0.909) precision: (test=0.899) recall: (test=0.102) roc_auc: (test=0.557) total time=309.8min
+[CV] END  accuracy: (test=0.910) precision: (test=0.866) recall: (test=0.110) roc_auc: (test=0.547) total time=681.7min
+[Parallel(n_jobs=-1)]: Done   5 out of   5 | elapsed: 704.8min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 32 concurrent workers.
+[CV] END  accuracy: (test=0.910) precision: (test=0.862) recall: (test=0.116) roc_auc: (test=0.565) total time=740.8min
+[Parallel(n_jobs=-1)]: Done   2 out of   5 | elapsed: 803.3min remaining: 1205.0min
+[CV] END  accuracy: (test=0.909) precision: (test=0.868) recall: (test=0.104) roc_auc: (test=0.554) total time=803.3min
+[CV] END  accuracy: (test=0.910) precision: (test=0.857) recall: (test=0.112) roc_auc: (test=0.569) total time=704.8min
+[CV] END  accuracy: (test=0.910) precision: (test=0.860) recall: (test=0.114) roc_auc: (test=0.551) total time=972.6min
+[CV] END  accuracy: (test=0.910) precision: (test=0.887) recall: (test=0.115) roc_auc: (test=0.559) total time=1014.2min
+[Parallel(n_jobs=-1)]: Done   5 out of   5 | elapsed: 1218.3min finished
+[CV] END  accuracy: (test=0.910) precision: (test=0.859) recall: (test=0.117) roc_auc: (test=0.573) total time=1218.3min
