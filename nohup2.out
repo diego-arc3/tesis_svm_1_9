@@ -1,0 +1,68 @@
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 16 concurrent workers.
+[Parallel(n_jobs=-1)]: Done   2 out of   5 | elapsed: 220.5min remaining: 330.8min
+Traceback (most recent call last):
+  File "/home/druizcardenas312/svm2.py", line 35, in <module>
+    scores = cross_validate(modelo, X_train, y_train["flg_preeclampsia"], cv=5, scoring=["roc_auc", "accuracy", "precision", "recall"], verbose=5, n_jobs=-1)
+  File "/home/druizcardenas312/.local/lib/python3.10/site-packages/sklearn/model_selection/_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "/home/druizcardenas312/.local/lib/python3.10/site-packages/joblib/parallel.py", line 1098, in __call__
+    self.retrieve()
+  File "/home/druizcardenas312/.local/lib/python3.10/site-packages/joblib/parallel.py", line 975, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "/home/druizcardenas312/.local/lib/python3.10/site-packages/joblib/_parallel_backends.py", line 567, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+The exit codes of the workers are {SIGKILL(-9), SIGKILL(-9), SIGKILL(-9), SIGKILL(-9)}
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 16 concurrent workers.
+[Parallel(n_jobs=-1)]: Done   2 out of   5 | elapsed: 51.4min remaining: 77.1min
+[CV] END  accuracy: (test=0.910) precision: (test=0.876) recall: (test=0.117) roc_auc: (test=0.534) total time=50.2min
+[CV] END  accuracy: (test=0.909) precision: (test=0.869) recall: (test=0.107) roc_auc: (test=0.536) total time=51.4min
+[CV] END  accuracy: (test=0.911) precision: (test=0.865) recall: (test=0.123) roc_auc: (test=0.549) total time=52.0min
+[CV] END  accuracy: (test=0.911) precision: (test=0.904) recall: (test=0.118) roc_auc: (test=0.537) total time=53.1min
+[Parallel(n_jobs=-1)]: Done   5 out of   5 | elapsed: 59.0min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 16 concurrent workers.
+[CV] END  accuracy: (test=0.911) precision: (test=0.899) recall: (test=0.119) roc_auc: (test=0.530) total time=59.0min
+[CV] END  accuracy: (test=0.910) precision: (test=0.876) recall: (test=0.117) roc_auc: (test=0.534) total time=86.8min
+[Parallel(n_jobs=-1)]: Done   2 out of   5 | elapsed: 93.1min remaining: 139.6min
+[CV] END  accuracy: (test=0.911) precision: (test=0.865) recall: (test=0.123) roc_auc: (test=0.538) total time=93.0min
+[CV] END  accuracy: (test=0.911) precision: (test=0.899) recall: (test=0.119) roc_auc: (test=0.543) total time=93.1min
+[Parallel(n_jobs=-1)]: Done   5 out of   5 | elapsed: 102.9min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 16 concurrent workers.
+[CV] END  accuracy: (test=0.911) precision: (test=0.863) recall: (test=0.125) roc_auc: (test=0.555) total time=153.0min
+[Parallel(n_jobs=-1)]: Done   2 out of   5 | elapsed: 158.9min remaining: 238.3min
+[CV] END  accuracy: (test=0.911) precision: (test=0.904) recall: (test=0.119) roc_auc: (test=0.535) total time=158.9min
+[Parallel(n_jobs=-1)]: Done   5 out of   5 | elapsed: 165.1min finished
+[CV] END  accuracy: (test=0.910) precision: (test=0.869) recall: (test=0.108) roc_auc: (test=0.548) total time=162.0min
+[CV] END  accuracy: (test=0.909) precision: (test=0.869) recall: (test=0.107) roc_auc: (test=0.552) total time=102.9min
+[CV] END  accuracy: (test=0.911) precision: (test=0.899) recall: (test=0.119) roc_auc: (test=0.540) total time=163.7min
+[CV] END  accuracy: (test=0.911) precision: (test=0.904) recall: (test=0.118) roc_auc: (test=0.527) total time=98.6min
+[CV] END  accuracy: (test=0.911) precision: (test=0.873) recall: (test=0.120) roc_auc: (test=0.534) total time=165.1min
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 16 concurrent workers.
+[CV] END  accuracy: (test=0.909) precision: (test=0.873) recall: (test=0.098) roc_auc: (test=0.550) total time=132.6min
+[Parallel(n_jobs=-1)]: Done   2 out of   5 | elapsed: 137.8min remaining: 206.8min
+[CV] END  accuracy: (test=0.910) precision: (test=0.902) recall: (test=0.108) roc_auc: (test=0.547) total time=137.8min
+[CV] END  accuracy: (test=0.910) precision: (test=0.873) recall: (test=0.109) roc_auc: (test=0.548) total time=145.1min
+[CV] END  accuracy: (test=0.910) precision: (test=0.860) recall: (test=0.110) roc_auc: (test=0.566) total time=152.8min
+[Parallel(n_jobs=-1)]: Done   5 out of   5 | elapsed: 173.1min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 16 concurrent workers.
+[CV] END  accuracy: (test=0.911) precision: (test=0.893) recall: (test=0.118) roc_auc: (test=0.547) total time=538.1min
+[Parallel(n_jobs=-1)]: Done   2 out of   5 | elapsed: 620.8min remaining: 931.2min
+[CV] END  accuracy: (test=0.911) precision: (test=0.900) recall: (test=0.118) roc_auc: (test=0.557) total time=620.8min
+[CV] END  accuracy: (test=0.910) precision: (test=0.896) recall: (test=0.109) roc_auc: (test=0.552) total time=173.1min
+[CV] END  accuracy: (test=0.910) precision: (test=0.876) recall: (test=0.117) roc_auc: (test=0.548) total time=653.0min
+[CV] END  accuracy: (test=0.910) precision: (test=0.874) recall: (test=0.107) roc_auc: (test=0.545) total time=661.1min
+[Parallel(n_jobs=-1)]: Done   5 out of   5 | elapsed: 683.7min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 16 concurrent workers.
+[CV] END  accuracy: (test=0.910) precision: (test=0.874) recall: (test=0.108) roc_auc: (test=0.547) total time=976.3min
+[Parallel(n_jobs=-1)]: Done   2 out of   5 | elapsed: 1038.7min remaining: 1558.0min
+[CV] END  accuracy: (test=0.911) precision: (test=0.893) recall: (test=0.118) roc_auc: (test=0.551) total time=1038.7min
+[CV] END  accuracy: (test=0.911) precision: (test=0.898) recall: (test=0.120) roc_auc: (test=0.555) total time=1084.5min
+[CV] END  accuracy: (test=0.911) precision: (test=0.862) recall: (test=0.122) roc_auc: (test=0.566) total time=1301.4min
+[Parallel(n_jobs=-1)]: Done   5 out of   5 | elapsed: 1351.0min finished
+[CV] END  accuracy: (test=0.911) precision: (test=0.862) recall: (test=0.121) roc_auc: (test=0.562) total time=683.7min
+[CV] END  accuracy: (test=0.910) precision: (test=0.876) recall: (test=0.117) roc_auc: (test=0.554) total time=1351.0min
